@@ -495,3 +495,40 @@
   .hidden {
     display: none;
   }
+
+  /* ESTILOS PARA LA TABLA */
+  .container-fluid{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d2025;
+    color: #ff7d1a;
+  }
+  table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #ff7d1a;
+  }
+  thead tr th:nth-child(1) {
+    width: 25%;
+  }
+  
+  thead tr th:nth-child(2) {
+    width: 25%;
+  }
+  
+  thead tr th:nth-child(3) {
+    width: 25%;
+  }
+  thead tr th:nth-child(4) {
+    width: 25%;
+  }
+  
+ 
+  
+  th, tr, td {
+    padding: 20px;
+  }
+ 
