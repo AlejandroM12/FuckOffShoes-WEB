@@ -1,4 +1,14 @@
 
+const cart = document.querySelector('.cart');
+const btnCart = document.querySelector('.btnCart');
+
+// FUNCION PARA ABRIR EL CARRITO
+btnCart.addEventListener('click', openCart)
+
+function openCart(){
+    cart.classList.toggle('hidden');
+}
+
 // BOTONES DE AGREGAR O DISMINUIR PRODUCTO - CONTADOR DE PRODUCTOS
 const btnPlus = document.querySelector('#btnPlus'); 
 const btnMinus = document.querySelector('#btnMinus'); 
