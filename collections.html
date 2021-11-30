@@ -27,7 +27,7 @@
           <div class="line"></div>
           <div class="line"></div>
         </div>
-        <img src="./images/logo.svg" alt="logo icon">
+        <a href="index.html"><img src="./images/logo.svg" alt="logo icon"></a>
         <!--Menu-->
         <nav class="menu hidden">
           <div class="slide-menu">
@@ -73,19 +73,43 @@
       </div>
     </header>
 
-      <div class="container-fluid">
-        <h1 class="jumbotron text-center" text-center>Tabla de Productos</h1>
-        <table class="table table-dark">
-              <thead>
-                  <th>Nombre</th>
-                  <th>Marca</th>
-                  <th>Precio</th>
-            </thead>
-            <tbody id="table-body">
-              
-            </tbody>
-          </table>
+    <div class="container">
+      <div class="jumbotron">
+          <h2 class="display2" id="title"> Insertar Producto</h2>
+          
+
+          <form id="product-form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="title-form" placeholder="Zapatilla">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="description-form" placeholder="Descripción">
+              <small id="descriptionHelp" class="form-text text-muted" >Escribe una breve descripción..</small>
+            </div>
+
+            <button type="submit" id="create-product" class="btn btn-info"> Añadir Producto</button>
+          </form>
+      
+        </div>
       </div>
+      
+                  <div class="row " id="row">
+                        <div class="col-sm-6 col-md-4 mt-5" id="cardFirst">
+                          <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title" id="title_card">Zapatilla Urbana</h5>
+                              <p class="card-text">Adidas</p>
+                              
+                              <a href="#" class="btn btn-primary" id="btnProd">Eliminar Producto</a>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                
+
+              
+         
 
   <script src="js/app.js"></script>
   <script src="js/menuHamburguesa.js"></script>
