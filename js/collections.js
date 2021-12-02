@@ -33,7 +33,7 @@ function create_card(title,description){
 
 // ELIMINAR CARTA
 
-
+const btn = document.getElementById('btnProd');
 btn.addEventListener('click', (e)=>{
   
   let ancestor = get_ancestors(e.target, 3);
