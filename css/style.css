@@ -93,6 +93,7 @@
   header .cart-avatar-group .btnCart {
     cursor: pointer;
     position: relative;
+    
   }
   
   header .cart-avatar-group .btnCart .cart-count {
@@ -117,6 +118,7 @@
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.1), 0 1rem 2rem 1rem rgba(0, 0, 0, 0.1);
+    z-index: 15;
   }
   header .cart .cart-header {
     border-bottom: 1px solid #b6bcc8;
@@ -310,7 +312,7 @@
     filter: brightness(300%);
   }
   /* MQ */
-  @media screen and (max-width: 1660px) {
+  @media screen and (max-width: 1640px) {
     .container {
       width: 77%;
       margin: 0 auto;
@@ -449,6 +451,7 @@
     .product .count-btn-group .btn {
       width: 100%;
     }
+    
   }
   /* OVERLAY */
   .overlay {
@@ -531,4 +534,60 @@
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.1);
   }
- 
+ /* DARK MODE */
+#dark-mode-btn {
+  width: 2.1rem;
+  cursor: pointer;
+}
+.dark-mode{
+  background-color: #151515;
+}
+.dark-mode p,a,h1,h2,h3,h4{
+  color: #e6e3dd;
+}
+#light-mode-btn{
+  width: 3rem;
+  cursor: pointer;
+  color: #f7f8fd;
+  
+}
+.dark-mode  header .hamburguer-logo-group .menu .slide-menu ul{
+  background-color: #151515;
+  color: #f7f8fd;
+}
+.dark-mode .hamburguer-logo-group .menu .slide-menu ul li a{
+  color: #f7f8fd;
+}
+
+.dark-mode .card{
+  background-color: #151515;
+}
+.dark-mode .nombre, .dark-mode .sectInf .title{
+  color: #f7f8fd;
+}
+/* SECTION HOMBRE */
+.sectInf .title {
+    color: #1d2025;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    line-height: 118%;
+}
+.nombre {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1d2025;
+}
+.marca {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #1d2025;
+}
+.precio {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #1d2025;
+}
+/* SECTION MUJER */

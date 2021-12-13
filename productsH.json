@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "imagen":"images/hombres/zapatillas-3mc-vulc.jpg",
+        "nombre": "3MC Vulc",
+        "marca": "Zapatillas Adidas",
+        "precio": "10.999"
+    },
+    {
+        "id": 2,
+        "imagen":"images/hombres/zapatillas-3mc-vulc-black.jpg",
+        "nombre": "3MC Vulc Black",
+        "marca": "Zapatillas Adidas",
+        "precio": "10.999"
+    },
+    {
+        "id": 3,
+        "imagen":"images/hombres/zapatillas-advantage-base.jpg",
+        "nombre": "Advantage Base",
+        "marca": "Zapatillas Adidas",
+        "precio": "10.999"
+    },
+    {
+        "id": 4,
+        "imagen":"images/hombres/zapatillas-campus-adv-unisex.jpg",
+        "nombre": "Campus ADV (UNISEX)",
+        "marca": "Zapatillas Adidas",
+        "precio": "14.999"
+    },
+    {
+        "id": 5,
+        "imagen":"images/hombres/zapatillas-duramo-sl.jpg",
+        "nombre": "Duramo SL",
+        "marca": "Zapatillas Adidas",
+        "precio": "11.499"
+    },
+    {
+        "id": 6,
+        "imagen":"images/hombres/zapatillas-eq19-run.jpg",
+        "nombre": "EQ 19 Run",
+        "marca": "Zapatillas Adidas",
+        "precio": "12.499"
+    },
+    {
+        "id": 7,
+        "imagen":"images/hombres/zapatillas-lite-racer-rebold.jpg",
+        "nombre": "Lite Racer Rebold",
+        "marca": "Zapatillas Adidas",
+        "precio": "12.499"
+    },
+    {
+        "id": 8,
+        "imagen":"images/hombres/zapatillas-ny-90.jpg",
+        "nombre": "NY 90",
+        "marca": "Zapatillas Adidas",
+        "precio": "13.999"
+    },
+    {
+        "id": 17,
+        "imagen":"images/hombres/zapatillas-vs-pace-black.jpg",
+        "nombre": "Superstar Black",
+        "marca": "Zapatillas Adidas",
+        "precio": "8.999"
+    },
+    {
+        "id": 10,
+        "imagen":"images/hombres/zapatillas-runfalcon-2.0.jpg",
+        "nombre": "Run Falcon 2.0",
+        "marca": "Zapatillas Adidas",
+        "precio": "10.499"
+    },
+    {
+        "id": 11,
+        "imagen":"images/hombres/zapatllas-run-falcon-2.0-black.jpg",
+        "nombre": "Run Falcon Black 2.0",
+        "marca": "Zapatillas Adidas",
+        "precio": ""
+    },
+    {
+        "id": 12,
+        "imagen":"images/hombres/stan-smith-adv.jpg",
+        "nombre": "Stan Smith",
+        "marca": "Zapatillas Adidas",
+        "precio": "15.999"
+    },
+    {
+        "id": 18,
+        "imagen":"images/hombres/zapatillas-vs-pace.jpg",
+        "nombre": "VS Pace",
+        "marca": "Zapatillas Adidas",
+        "precio": "8.999"
+    },
+    {
+        "id": 14,
+        "imagen":"images/hombres/zapatillas-stan-smith-unisex.jpg",
+        "nombre": "Stan Smith (UNISEX)",
+        "marca": "Zapatillas Adidas",
+        "precio": "15.399"
+    },
+    {
+        "id": 15,
+        "imagen":"images/hombres/zapatillas-supernova.jpg",
+        "nombre": "Supernova",
+        "marca": "Zapatillas Adidas",
+        "precio": "18.499"
+    },
+    {
+        "id": 16,
+        "imagen":"images/hombres/zapatillas-superstar.jpg",
+        "nombre": "Superstar",
+        "marca": "Zapatillas Adidas",
+        "precio": "18.499"
+    }
+    
+   
+]

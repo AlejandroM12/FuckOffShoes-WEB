@@ -1,0 +1,88 @@
+[
+
+        {
+            "id": 17,
+            "imagen":"images/mujeres/zapatillas-a.r.-trainer.jpg",
+            "nombre": "A.R. TRAINER",
+            "marca": "Zapatillas Adidas",
+            "precio": "18.499"
+        },
+        {
+            "id": 18,
+            "imagen":"images/mujeres/zapatillas-campus-adv-unisex.jpg",
+            "nombre": "Campus ADV (UNISEX)",
+            "marca": "Zapatillas Adidas",
+            "precio": "14.999"
+        },
+        {
+            "id": 19,
+            "imagen":"images/mujeres/zapatillas-coast-star.jpg",
+            "nombre": "COAST STAR",
+            "marca": "Zapatillas Adidas",
+            "precio": "14.499"
+        },
+        {
+            "id": 20,
+            "imagen":"images/mujeres/zapatillas-continental-80.jpg",
+            "nombre": "Continental 80",
+            "marca": "Zapatillas Adidas",
+            "precio": "18.499"
+        },
+        {
+            "id": 21,
+            "imagen":"images/mujeres/zapatillas-multix.jpg",
+            "nombre": "Multix",
+            "marca": "Zapatillas Adidas",
+            "precio": "13.499"
+        },
+        {
+            "id":22,
+            "imagen":"images/mujeres/zapatillas-nizza-plataforma.jpg",
+            "nombre": "Nizza Plataforma",
+            "marca": "Zapatillas Adidas",
+            "precio": "10.999"
+        },
+        {
+            "id": 23,
+            "imagen":"images/mujeres/zapatillas-team-court.jpg",
+            "nombre": "Team Court",
+            "marca": "Zapatillas Adidas",
+            "precio": "13.999"
+        },
+        {
+            "id": 24,
+            "imagen":"images/mujeres/ny-90-w.jpg",
+            "nombre": "NY 90",
+            "marca": "Zapatillas Adidas",
+            "precio": "13.999"
+        },
+        {
+            "id": 25,
+            "imagen":"images/mujeres/zapatillas-adidas-sleek-super.jpg",
+            "nombre": "Sleek Super",
+            "marca": "Zapatillas Adidas",
+            "precio": "17.999"
+        },
+        {
+            "id": 26,
+            "imagen":"images/mujeres/zapatillas-stan-smith.jpg",
+            "nombre": "Stan Smith",
+            "marca": "Zapatillas Adidas",
+            "precio": "18.699"
+        },
+        {
+            "id": 27,
+            "imagen":"images/mujeres/zapatillas-stan-smith-unisex.jpg",
+            "nombre": "Stan Smith (UNISEX)",
+            "marca": "Zapatillas Adidas",
+            "precio": "15.399"
+        },
+        {
+            "id": 28,
+            "imagen":"images/mujeres/zapatillas-Superstar-Blanco.jpg",
+            "nombre": "Superstar",
+            "marca": "Zapatillas Adidas",
+            "precio": "18.499"
+        }
+    
+]
