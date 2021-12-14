@@ -13,13 +13,15 @@ $( () => {
         $("body").addClass("dark-mode")
         $("#dark-mode-btn").hide()
         $("#light-mode-btn").show()
-
+        $("#logo").hide()
+        $("#logoOrange").show()
         
         
         
         
     }else{
         $("#light-mode-btn").hide()
+        $("#logoOrange").hide()
        
         
     }
@@ -28,12 +30,16 @@ $( () => {
         $("#dark-mode-btn").show()
         $("body").removeClass("dark-mode")
         localStorage.setItem("dark-mode", "light")
+        $("#logo").show()
+        $("#logoOrange").hide()
     })
     $("#dark-mode-btn").click(()=>{
         $("#light-mode-btn").show()
         $("#dark-mode-btn").hide()
         $("body").addClass("dark-mode")
         localStorage.setItem("dark-mode", "dark")
+        $("#logo").hide()
+        $("#logoOrange").show()
     })
     
 })

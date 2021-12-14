@@ -312,7 +312,7 @@
     filter: brightness(300%);
   }
   /* MQ */
-  @media screen and (max-width: 1640px) {
+  @media screen and (min-width: 1440px) {
     .container {
       width: 77%;
       margin: 0 auto;
@@ -565,6 +565,7 @@
 .dark-mode .nombre, .dark-mode .sectInf .title{
   color: #f7f8fd;
 }
+
 /* SECTION HOMBRE */
 .sectInf .title {
     color: #1d2025;
@@ -590,4 +591,5 @@
   font-size: 1.5rem;
   color: #1d2025;
 }
+
 /* SECTION MUJER */
