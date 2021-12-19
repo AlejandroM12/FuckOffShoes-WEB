@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+  <!--Glider CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
   <!--Icon-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!--Bootstrap-->
@@ -39,7 +41,6 @@
               <li><a href="collections.html">Colección</a></li>
               <li><a href="hombre.html">Hombre</a></li>
               <li><a href="mujer.html">Mujer</a></li>
-              <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
           </div>
@@ -67,39 +68,80 @@
     </header>
 
 
-      <div class="slider">
-        <p>FUCKOFFSHOES COMPANY</p>
-        <div class="element">
-          <img class="sliderImg" src="images/background1.jpg" alt="">
-          
-        </div>
-        <div class="element">
-          <img class="sliderImg" src="images/background2.jpg" alt="">
-          
-        </div>
-        <div class="element">
-          <img class="sliderImg" src="images/background3.jpg" alt="">
-          
-        </div>
-        <div class="element">
-          <img class="sliderImg" src="images/background4.jpg" alt="">
-         
-        </div>
-        <div class="element">
-          <img class="sliderImg" src="images/background5.jpg" alt="">
-          
-        </div>
-        <div class="element">
-          <img class="sliderImg" src="images/background6.jpg" alt="">
-          
-        </div>
-      </div>
+      <!--CAROUSEL-->
+          <div class="container">
+            <div class="carousel">
+              <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel__lista">
+                  <div class="carousel__elemento">
+                    <img src="images/1.jpg" alt="">
+                    <p>Superstar</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/2.jpg" alt="">
+                    <p>Parkour</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/3.jpg" alt="">
+                    <p>Hurdling</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/4.jpg" alt="">
+                    <p>Running</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/5.jpg" alt="">
+                    <p>Fresh Air</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/6.jpg" alt="">
+                    <p>Running</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/7.jpg" alt="">
+                    <p>Long Jump</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/8.jpg" alt="">
+                    <p>Basquet </p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="images/9.jpg" alt="">
+                    <p>Yoga</p>
+                  </div>
+
+                  <div class="carousel__elemento">
+                    <img src="images/10.jpg" alt="">
+                    <p>Original</p>
+                  </div>
+                </div>
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+
+              <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+          </div> 
+      <!--CAROUSEL-->
 
         <!--Scripts-->
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
             <script src="https://kit.fontawesome.com/54a849fe04.js" crossorigin="anonymous"></script>
             <script src="js/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
             <script src="js/menuHamburguesa.js"></script>
             <script src="js/darkLightMode.js"></script>
             <script src="js/slider.js"></script>

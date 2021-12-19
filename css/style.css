@@ -28,6 +28,12 @@
     gap: 1.6rem;
     cursor: pointer;
   }
+  header .hamburguer-logo-group #logo{
+    width: 25rem;
+  }
+  header .hamburguer-logo-group #logoOrange{
+    width: 25rem;
+  }
   header .hamburguer-logo-group .hamburguer {
     display: flex;
     flex-direction: column;
@@ -89,11 +95,12 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    margin-right: 10rem;
   }
   header .cart-avatar-group .btnCart {
     cursor: pointer;
     position: relative;
-    
+
   }
   
   header .cart-avatar-group .btnCart .cart-count {
@@ -312,7 +319,7 @@
     filter: brightness(300%);
   }
   /* MQ */
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1290px) {
     .container {
       width: 77%;
       margin: 0 auto;
@@ -324,6 +331,12 @@
     }
     header .hamburguer-logo-group {
       gap: 5.4rem;
+    }
+    header .hamburguer-logo-group #logo{
+      width: 50rem;
+    }
+    header .hamburguer-logo-group #logoOrange{
+      width: 50rem;
     }
     header .hamburguer-logo-group .hamburguer {
       display: none;
@@ -361,10 +374,10 @@
       border-bottom: 3px solid #ff7d1a;
     }
     header .cart-avatar-group {
-      gap: 4.5rem;
+      gap: 2.5rem;
     }
     header .cart {
-      right: 5rem;
+      right: 1rem;
       top: 90%;
     }
     header .cart-avatar-group .btnCart {
@@ -452,7 +465,9 @@
       width: 100%;
     }
     
+    
   }
+  
   /* OVERLAY */
   .overlay {
     position: absolute;
@@ -495,45 +510,62 @@
   .hidden {
     display: none;
   }
-/* COVER PAGE */
-  .slider{
-    max-width: 100%;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-  }
- .sliderImg {
-    width: 100%;
-    height: 80%;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    left: -100%;
-    box-shadow: 2px 0px 10px rgba(0,0,0,0.5);
-    transition: left 0.5;
-  }
-.sliderImg.active{
-    z-index: 2;
-    left: 0px;
-  }
-.sliderImg.start-out{
-    z-index: 1;
-  }
+/* CAROUSEL */
+.carousel__contenedor{
+  margin-top: 5rem;
+  position: relative;
+}
 
-.slider p {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #ff7d1a;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+.carousel__anterior,
+.carousel__siguiente{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #151515;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+  color: #ff7d1a;
+}
+.carousel__anterior{
+  left: -30px;
+}
+.carousel__siguiente{
+  right: -30px;
+}
+.carousel__lista{
+  overflow: hidden;
+}
+.carousel__elemento{
+  text-align: center;
+}
+.carousel__elemento p{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ff7d1a;
+}
+.carousel__indicadores .glider-dot{
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #151515;
+  opacity: .2;
+  border-radius: 0;
+}
+.carousel__indicadores .glider-dot:hover{
+  opacity: .5;
+}
+.carousel__indicadores .glider-dot.active{
+  opacity: 1;
+}
  /* DARK MODE */
 #dark-mode-btn {
   width: 2.1rem;
@@ -565,7 +597,34 @@
 .dark-mode .nombre, .dark-mode .sectInf .title{
   color: #f7f8fd;
 }
-
+.dark-mode header .hamburguer-logo-group .menu .slide-menu{
+  background-color: #151515;
+}
+.dark-mode .carousel__anterior,
+.dark-mode .carousel__siguiente{
+  color: #f7f8fd;
+}
+.dark-mode .carousel__anterior:hover,
+.dark-mode .carousel__siguiente:hover{
+  color: #ff7d1a;
+}
+.dark-mode .carousel__indicadores .glider-dot{
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #f7f8fd;
+  opacity: .2;
+  border-radius: 0;
+}
+.dark-mode .carousel__indicadores .glider-dot:hover{
+  opacity: .5;
+}
+.dark-mode .carousel__indicadores .glider-dot.active{
+  opacity: 1;
+}
+.dark-mode .product .btn {
+  box-shadow: none;
+}
 /* SECTION HOMBRE */
 .sectInf .title {
     color: #1d2025;

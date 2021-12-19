@@ -1,26 +1,32 @@
+window.addEventListener('load', ()=>{
+    new Glider(document.querySelector('.carousel__lista'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: '.carousel__indicadores',
+        arrows: {
+            prev: '.carousel__anterior',
+            next: '.carousel__siguiente'
+        },
 
-let currentIndex = -1;
-let elements = document.querySelectorAll('.sliderImg');
-next();
-function next(){
-    currentIndex = currentIndex + 1;
-    
-    
-    if(currentIndex >= elements.length) currentIndex = 0;
-
-    let el = elements[currentIndex];
-
-    let activeElement = document.querySelector('.sliderImg.active');
-
-    if(activeElement){
-        activeElement.classList.add('start-out');
-        setTimeout(moveActive,500,activeElement)
-    }
-    el.classList.add('active');
-    setTimeout(next,5000)
-} 
-function moveActive(activeElement){
-    activeElement.classList.remove('active');
-    activeElement.classList.remove('start-out');
-}
-
+        responsive: [
+            {
+              // screens greater than >= 800px
+              breakpoint: 450,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                duration: 0.25
+              }
+            },{
+              // screens greater than >= 1024px
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                duration: 0.25
+              }
+            }
+          ]
+    });
+});
