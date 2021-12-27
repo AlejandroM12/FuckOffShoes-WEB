@@ -15,6 +15,8 @@ $( () => {
         $("#light-mode-btn").show()
         $("#logo").hide()
         $("#logoOrange").show()
+        $("#iconCart1").hide()
+        $("#iconCart2").show()
         
         
         
@@ -22,6 +24,7 @@ $( () => {
     }else{
         $("#light-mode-btn").hide()
         $("#logoOrange").hide()
+        $("#IconCart1").hide()
        
         
     }
@@ -32,6 +35,8 @@ $( () => {
         localStorage.setItem("dark-mode", "light")
         $("#logo").show()
         $("#logoOrange").hide()
+        $("#iconCart1").show()
+        $("#iconCart2").hide()
     })
     $("#dark-mode-btn").click(()=>{
         $("#light-mode-btn").show()
@@ -40,6 +45,8 @@ $( () => {
         localStorage.setItem("dark-mode", "dark")
         $("#logo").hide()
         $("#logoOrange").show()
+        $("#iconCart1").hide()
+        $("#iconCart2").show()
     })
     
 })
