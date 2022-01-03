@@ -1,6 +1,6 @@
 
-const cart = document.querySelector('.cart');
-const btnCart = document.querySelector('.btnCart');
+const cart = document.getElementById('cart');
+const btnCart = document.getElementById('btnCart');
 
 const btnPlus = document.querySelector('#btnPlus'); 
 const btnMinus = document.querySelector('#btnMinus'); 
@@ -12,12 +12,12 @@ const heroImg = document.querySelector('.product-here');
 const btnNext = document.querySelector('.next');
 const btnPrevious = document.querySelector('.previous');
 
-const btnAddToCard = document.querySelector('.btn');
-const cartCount = document.querySelector('.cart-count');
-const productInShoppingCart =document.querySelector('.products-in-cart');
+const btnAddToCard = document.getElementById('btn');
+const cartCount = document.getElementById('cart-count');
+const productInShoppingCart =document.getElementById('products-in-cart');
 
-const msgEmpty = document.querySelector('.msg-empty');
-const checkout = document.querySelector('.checkout');
+const msgEmpty = document.getElementById('msg-empty');
+const checkout = document.getElementById('checkout');
 
 const overlay = document.querySelector('.overlay');
 const lightbox = document.querySelector('.lightbox');
@@ -28,12 +28,10 @@ let lightboxHero;
 // VARIABLES NUMERICAS
 let productCounterValue = 1;
 let productsInCart = 0;
-let price =  250.00;
-let discount = 0.5;
+
 
 // EVENTOS PARA LAS FUNCIONES
 btnCart.addEventListener('click', openCart)
-
 btnPlus.addEventListener('click', productCounterPlus);
 btnMinus.addEventListener('click', productCounterMinus);
 
@@ -43,13 +41,13 @@ gallery.forEach(img => {
 
 btnNext.addEventListener('click', handleBtnClickNext);
 btnPrevious.addEventListener('click', handleBtnClickPrevious);
+btnAddToCard.addEventListener('click', addToCart)
 
-btnAddToCard.addEventListener('click', addToCart);
 
 heroImg.addEventListener('click', onHeroImgClick);
 
 // FUNCION PARA ABRIR EL CARRITO
-btnCart.addEventListener('click', openCart)
+
 
 function openCart(){
     cart.classList.toggle('hidden');
@@ -123,30 +121,30 @@ function setHeroImage(imageIndex){
 
 
 function addToCart(){
-    productsInCart += productCounterValue;
-
-    const productHTMLElement = `
-    <div class="item">
-          <img class="product-img" src="./images/image-product-1-thumbnail.jpg" alt="product 1">
-          <div class="details">
-            <div class="product-name">Autumn Limited Edition...</div>
-            <div class="price-group">
-              <div class="price">$${(price*discount).toFixed(2)}</div> x
-              <div class="count">${productsInCart}</div>
-              <div class="total-amount">$${(price*discount*productsInCart).toFixed(2)}</div>
-          </div>
-          </div>
-            <img id="btnDelete" src="./images/icon-delete.svg" alt="icon delete">
-        </div>
-        `;
-        
+    const productosStorage = JSON.parse(localStorage.getItem('carrito'))
+    productosStorage.forEach((productoCarrito, index) => {
+        const productHTMLElement = `
+        <div class="item" id="producto${productoCarrito.id}">
+            <img class="product-img" src="${productoCarrito.imagen}" alt="product 1">
+            <div class="details">
+                <div class="product-name">${productoCarrito.nombre}</div>
+                <div class="price-group">
+                <div class="price">$${(productoCarrito.precio).toFixed(2)}</div> x
+                <div class="count">${(productsInCart + productoCarrito.cantidad).toFixed(2)}</div>
+                <div class="total-amount">$${(productosStorage.precio*productsInCart).toFixed(2)}</div>
+            </div>
+            </div>
+                <img id="btnDelete" src="./images/icon-delete.svg" alt="icon delete">
+            </div>
+    `;
     productInShoppingCart.innerHTML = productHTMLElement;
     updateCart();
+    })
 
     const btnDelete = document.querySelector('#btnDelete');
-    btnDelete.addEventListener('click', onBtnDeleteClick);
-    
+    btnDelete.addEventListener('click', onBtnDeleteClick);  
 }
+
 function updateCart(){
     updateCartIcon();
     updateMsgEmpty();

@@ -388,6 +388,19 @@
   .card{
     transition: all 4s;
   }
+  /* BTN whatsapp */
+  .btn-whatsapp {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999; 
+  }
+
   /* MQ */
   @media screen and (min-width: 1290px) {
     .container {
