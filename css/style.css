@@ -343,14 +343,51 @@
     filter: brightness(300%);
   }
   .btn {
-    background-color: #68707d ;
+    background-color: #ff7d1a ;
+    color: #f7f8fd;
     justify-content: center;
     font-weight: 700;
     border-radius: 1rem;
     width: 12rem;
     margin-left: 8rem;
   }
-
+  .btn img{
+    margin-top: 0.8rem;
+  }
+  .btn p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .card {
+    margin: 5rem;
+    justify-content: center;
+  }
+  /* FILTER */
+  .dropdown {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .dropdown .btn{
+    width: 15rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border: none;
+    color: #151515;
+  }
+  .dropdown .dropdown-menu .dropdown-item{
+    font-size: 1.5rem;
+    color: #151515;
+    font-weight: bold;
+  }
+  .dropdown .dropdown-menu .dropdown-item:active{
+    background-color: #ff7d1a;
+  }
+  .card{
+    transition: all 4s;
+  }
   /* MQ */
   @media screen and (min-width: 1290px) {
     .container {
@@ -670,6 +707,12 @@
 .dark-mode .containerCategory .hombre a p:hover, .dark-mode .containerCategory .mujer a p:hover{
   color: #ff7d1a;
   transition: 0.5s;
+}
+.dark-mode .dropdown .btn{
+  color: #151515;
+}
+.dark-mode .dropdown .btn:hover{
+ color: #f7f8fd;
 }
 /* SECTION INFO INDEX & HOMBRE & MUJER */
 .sectInf .title {

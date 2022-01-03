@@ -4,112 +4,128 @@
         "imagen":"images/hombres/zapatillas-3mc-vulc.jpg",
         "nombre": "3MC Vulc",
         "marca": "Zapatillas Adidas",
-        "precio": "10.999"
+        "precio": "10.999",
+        "category": "Urbana"
     },
     {
         "id": 2,
         "imagen":"images/hombres/zapatillas-3mc-vulc-black.jpg",
         "nombre": "3MC Vulc Black",
         "marca": "Zapatillas Adidas",
-        "precio": "10.999"
+        "precio": "10.999",
+        "category": "Urbana"
     },
     {
         "id": 3,
         "imagen":"images/hombres/zapatillas-advantage-base.jpg",
         "nombre": "Advantage Base",
         "marca": "Zapatillas Adidas",
-        "precio": "10.999"
+        "precio": "10.999",
+        "category": "Urbana"
     },
     {
         "id": 4,
         "imagen":"images/hombres/zapatillas-campus-adv-unisex.jpg",
         "nombre": "Campus ADV (UNISEX)",
         "marca": "Zapatillas Adidas",
-        "precio": "14.999"
+        "precio": "14.999",
+        "category": "Urbana"
     },
     {
         "id": 5,
         "imagen":"images/hombres/zapatillas-duramo-sl.jpg",
         "nombre": "Duramo SL",
         "marca": "Zapatillas Adidas",
-        "precio": "11.499"
+        "precio": "11.499",
+        "category": "Deportiva"
     },
     {
         "id": 6,
         "imagen":"images/hombres/zapatillas-eq19-run.jpg",
         "nombre": "EQ 19 Run",
         "marca": "Zapatillas Adidas",
-        "precio": "12.499"
+        "precio": "12.499",
+        "category": "Deportiva"
     },
     {
         "id": 7,
         "imagen":"images/hombres/zapatillas-lite-racer-rebold.jpg",
         "nombre": "Lite Racer Rebold",
         "marca": "Zapatillas Adidas",
-        "precio": "12.499"
+        "precio": "12.499",
+        "category": "Deportiva"
     },
     {
         "id": 8,
         "imagen":"images/hombres/zapatillas-ny-90.jpg",
         "nombre": "NY 90",
         "marca": "Zapatillas Adidas",
-        "precio": "13.999"
+        "precio": "13.999",
+        "category": "Urbana"
     },
     {
-        "id": 17,
+        "id": 9,
         "imagen":"images/hombres/zapatillas-vs-pace-black.jpg",
         "nombre": "Superstar Black",
         "marca": "Zapatillas Adidas",
-        "precio": "8.999"
+        "precio": "8.999",
+        "category": "Urbana"
     },
     {
         "id": 10,
         "imagen":"images/hombres/zapatillas-runfalcon-2.0.jpg",
         "nombre": "Run Falcon 2.0",
         "marca": "Zapatillas Adidas",
-        "precio": "10.499"
+        "precio": "10.499",
+        "category": "Deportiva"
     },
     {
         "id": 11,
         "imagen":"images/hombres/zapatllas-run-falcon-2.0-black.jpg",
         "nombre": "Run Falcon Black 2.0",
         "marca": "Zapatillas Adidas",
-        "precio": ""
+        "precio": "12.899",
+        "category": "Deportiva"
     },
     {
         "id": 12,
         "imagen":"images/hombres/stan-smith-adv.jpg",
         "nombre": "Stan Smith",
         "marca": "Zapatillas Adidas",
-        "precio": "15.999"
+        "precio": "15.999",
+        "category": "Urbana"
     },
     {
         "id": 18,
         "imagen":"images/hombres/zapatillas-vs-pace.jpg",
         "nombre": "VS Pace",
         "marca": "Zapatillas Adidas",
-        "precio": "8.999"
+        "precio": "8.999",
+        "category": "Urbana"
     },
     {
         "id": 14,
         "imagen":"images/hombres/zapatillas-stan-smith-unisex.jpg",
         "nombre": "Stan Smith (UNISEX)",
         "marca": "Zapatillas Adidas",
-        "precio": "15.399"
+        "precio": "15.399",
+        "category": "Urbana"
     },
     {
         "id": 15,
         "imagen":"images/hombres/zapatillas-supernova.jpg",
         "nombre": "Supernova",
         "marca": "Zapatillas Adidas",
-        "precio": "18.499"
+        "precio": "18.499",
+        "category": "Deportiva"
     },
     {
         "id": 16,
         "imagen":"images/hombres/zapatillas-superstar.jpg",
         "nombre": "Superstar",
         "marca": "Zapatillas Adidas",
-        "precio": "18.499"
+        "precio": "18.499",
+        "category": "Urbana"
     },
     {
         "id": 17,
@@ -120,7 +136,8 @@
         "thumbnail4": "images/mujeres/Zapatillas-A-R-Trainer-4-thumbnail.jpg",
         "nombre": "A.R. TRAINER",
         "marca": "Zapatillas Adidas",
-        "precio": "18.499"
+        "precio": "18.499",
+        "category": "Urbana"
     },
     {
         "id": 18,
@@ -131,7 +148,8 @@
         "thumbnail4":"images/mujeres/zapatillas-campus-adv-unisex-4-thumbnail.jpg",
         "nombre": "Campus ADV (UNISEX)",
         "marca": "Zapatillas Adidas",
-        "precio": "14.999"
+        "precio": "14.999",
+        "category": "Urbana"
     },
     {
         "id": 19,
@@ -142,7 +160,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Coast-Star-4-thumbnail.jpg",
         "nombre": "COAST STAR",
         "marca": "Zapatillas Adidas",
-        "precio": "14.499"
+        "precio": "14.499",
+        "category": "Urbana"
     },
     {
         "id": 20,
@@ -153,7 +172,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Continental-80-4-thumbnail.jpg",
         "nombre": "Continental 80",
         "marca": "Zapatillas Adidas",
-        "precio": "18.499"
+        "precio": "18.499",
+        "category": "Urbana"
     },
     {
         "id": 21,
@@ -164,7 +184,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Multix-Rosa-4-thumbnail.jpg",
         "nombre": "Multix",
         "marca": "Zapatillas Adidas",
-        "precio": "13.499"
+        "precio": "13.499",
+        "category": "Urbana"
     },
     {
         "id":22,
@@ -175,7 +196,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Nizza-Plataforma-4-thumbnail.jpg",
         "nombre": "Nizza Plataforma",
         "marca": "Zapatillas Adidas",
-        "precio": "10.999"
+        "precio": "10.999",
+        "category": "Urbana"
     },
     {
         "id": 23,
@@ -186,7 +208,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Team-Court-4-thumbnail.jpg",
         "nombre": "Team Court",
         "marca": "Zapatillas Adidas",
-        "precio": "13.999"
+        "precio": "13.999",
+        "category": "Urbana"
     },
     {
         "id": 24,
@@ -197,7 +220,8 @@
         "thumbnail4":"images/mujeres/NY-90-W-4-thumbnail.jpg",
         "nombre": "NY 90",
         "marca": "Zapatillas Adidas",
-        "precio": "13.999"
+        "precio": "13.999",
+        "category": "Urbana"
     },
     {
         "id": 25,
@@ -208,7 +232,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-adidas-Sleek-4-thumbnail.jpg",
         "nombre": "Sleek Super",
         "marca": "Zapatillas Adidas",
-        "precio": "17.999"
+        "precio": "17.999",
+        "category": "Urbana"
     },
     {
         "id": 26,
@@ -219,7 +244,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Stan-Smith-4-thumbnail.jpg",
         "nombre": "Stan Smith",
         "marca": "Zapatillas Adidas",
-        "precio": "18.699"
+        "precio": "18.699",
+        "category": "Urbana"
     },
     {
         "id": 27,
@@ -230,7 +256,8 @@
         "thumbnail4":"images/mujeres/zapatillas-stan-smith-unisex-4-thumbnail.jpg",
         "nombre": "Stan Smith (UNISEX)",
         "marca": "Zapatillas Adidas",
-        "precio": "15.399"
+        "precio": "15.399",
+        "category": "Urbana"
     },
     {
         "id": 28,
@@ -241,7 +268,8 @@
         "thumbnail4":"images/mujeres/Zapatillas-Superstar-Blanco-4-thumbnail.jpg",
         "nombre": "Superstar",
         "marca": "Zapatillas Adidas",
-        "precio": "18.499"
+        "precio": "18.499",
+        "category": "Urbana"
     }
     
    
