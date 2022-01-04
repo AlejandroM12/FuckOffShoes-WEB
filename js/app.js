@@ -120,8 +120,10 @@ function setHeroImage(imageIndex){
 // FUNCIÓN PARA AGREGAR PRODUCTO AL CARRITO
 
 
-function addToCart(){
-    const productosStorage = JSON.parse(localStorage.getItem('carrito'))
+async function addToCart(){
+    
+    const productosStorage = JSON.parse( await localStorage.getItem('carrito'))
+    console.log(productosStorage, 'productos')
     productosStorage.forEach((productoCarrito, index) => {
         const productHTMLElement = `
         <div class="item" id="producto${productoCarrito.id}">

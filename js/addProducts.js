@@ -48,7 +48,7 @@ fetch('./js/databaseProducts.json')
                     let producto = new Producto (product.id, product.imagen, product.nombre,product.marca,product.precio) 
                     productos.push(producto)
                     localStorage.setItem('carrito', JSON.stringify(productos))
-                }
+                } 
                 
             })
         })

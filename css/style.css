@@ -806,3 +806,44 @@
   color: #ff7d1a;
   font-size: 2.5rem;
 }
+/* SECTION CONTACT */
+.formularioB {
+  max-width: 1000px;
+  padding: 20px;
+  background: #111; 
+}
+.form-label{
+  font-size: 1.5rem;
+  color: #f7f8fd;
+}
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 57px auto; 
+}
+
+.contacto h2 {
+      color: #ffad71; 
+}
+.form-check-label {
+font-size: 1.5rem;
+ color: #f7f8fd;
+}
+.contact-form-loader{
+  text-align: center;
+}
+.contact-form-response{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f7f8fd;
+}
+.none{
+  display: none;
+}
+.contact-form-error.is-active{
+  display: block;
+  animation: show-mesage 1s 1 normal0s ease-out both;
+}
