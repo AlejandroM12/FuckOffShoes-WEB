@@ -270,6 +270,30 @@
         "marca": "Zapatillas Adidas",
         "precio": "18.499",
         "category": "Urbana"
+    },
+    {
+        "id": 29,
+        "imagen":"images/mujeres/zapatillas-coreracer.jpg",
+        "nombre": "CoreRacer",
+        "marca": "Zapatillas Adidas",
+        "precio": "15.499",
+        "category": "Deportiva"
+    },
+    {
+        "id": 30,
+        "imagen":"images/mujeres/zapatillas-racer-tr21.jpg",
+        "nombre": "Racer TR21",
+        "marca": "Zapatillas Adidas",
+        "precio": "19.499",
+        "category": "Deportiva"
+    },
+    {
+        "id": 31,
+        "imagen":"images/mujeres/zapatillas-novamotion.jpg",
+        "nombre": "Novamotion",
+        "marca": "Zapatillas Adidas",
+        "precio": "12.499",
+        "category": "Deportiva"
     }
     
    
