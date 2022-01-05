@@ -1,0 +1,27 @@
+{
+  "name": "fuckoffshoes-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "(app.js) (index.html)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroM12/FuckOffShoes-WEB.git"
+  },
+  "keywords": [
+    "fuckoffshoes",
+    "html",
+    "css",
+    "javascript",
+    "ajax",
+    "jquery"
+  ],
+  "author": "Axel Alejandro Morel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroM12/FuckOffShoes-WEB/issues"
+  },
+  "homepage": "https://github.com/AlejandroM12/FuckOffShoes-WEB#readme"
+}

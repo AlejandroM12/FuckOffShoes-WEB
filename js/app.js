@@ -117,7 +117,7 @@ function updateCheckoutButton(){
 // FUNCIÓN PARA ICONO DE ELIMINAR PRODUCTO EN EL CARRITO
 function onBtnDeleteClick(e){
     const productId = e.target.id.slice(9);
-    console.log(productId)
+    // console.log(productId)
     const productosStorage = JSON.parse(localStorage.getItem('carrito'));
     const productos = productosStorage.filter(producto => producto.id != productId);
     localStorage.setItem('carrito', JSON.stringify(productos));
