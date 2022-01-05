@@ -106,7 +106,6 @@
   header .cart-avatar-group .btnCart .cart-count {
     position: absolute;
     top: -25%;
-    right: -25%;
     background-color: #ff7d1a;
     color: white;
     font-size: 1rem;
@@ -119,7 +118,7 @@
   header .cart {
     position: absolute;
     right: 1rem;
-    top: calc(calc(100%)+1rem);
+    top: 100%;
     width: 35.5rem;
     z-index: 1;
     background-color: white;
@@ -160,6 +159,10 @@
   header .cart .products-in-cart .item #btnDelete {
     padding: 0.5rem;
     border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  header .cart .products-in-cart .item .btnDelete{
+    cursor: pointer;
   }
   header .cart .products-in-cart .item #btnDelete:hover {
     cursor: pointer;
@@ -368,9 +371,19 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    cursor: pointer;
   }
-  .dropdown .btn{
+.btnFilter {
+      background-color: #ff7d1a ;
+      color: #f7f8fd;
+      justify-content: center;
+      font-weight: 700;
+      border-radius: 1rem;
+      width: 15rem;
+      margin-left: 8rem;
+      cursor: pointer;
+
+  }
+  .dropdown .btnFilter{
     width: 15rem;
     line-height: 2rem;
     font-size: 1.5rem;
@@ -387,6 +400,9 @@
   }
   .card{
     transition: all 4s;
+  }
+  .dropdown .dropdown-menu {
+    border: none;
   }
   /* BTN whatsapp */
   .btn-whatsapp {

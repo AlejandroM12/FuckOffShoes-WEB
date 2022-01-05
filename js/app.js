@@ -1,6 +1,6 @@
 
 const cart = document.getElementById('cart');
-const btnCart = document.getElementById('btnCart');
+const btnCart = document.querySelectorAll('.btnCart');
 
 const btnPlus = document.querySelector('#btnPlus'); 
 const btnMinus = document.querySelector('#btnMinus'); 
@@ -12,9 +12,9 @@ const heroImg = document.querySelector('.product-here');
 const btnNext = document.querySelector('.next');
 const btnPrevious = document.querySelector('.previous');
 
-const btnAddToCard = document.getElementById('btn');
+const btnAddToCard = document.querySelectorAll('.btn');
 const cartCount = document.getElementById('cart-count');
-const productInShoppingCart =document.getElementById('products-in-cart');
+const productInShoppingCart = document.getElementById('products-in-cart');
 
 const msgEmpty = document.getElementById('msg-empty');
 const checkout = document.getElementById('checkout');
@@ -31,20 +31,21 @@ let productsInCart = 0;
 
 
 // EVENTOS PARA LAS FUNCIONES
-btnCart.addEventListener('click', openCart)
-btnPlus.addEventListener('click', productCounterPlus);
-btnMinus.addEventListener('click', productCounterMinus);
+btnCart.forEach(btn => btn.addEventListener('click', openCart));
+// btnPlus.addEventListener('click', productCounterPlus);
+// btnMinus.addEventListener('click', productCounterMinus);
 
 gallery.forEach(img => {
     img.addEventListener('click', onThumbClick);
 });
 
-btnNext.addEventListener('click', handleBtnClickNext);
-btnPrevious.addEventListener('click', handleBtnClickPrevious);
-btnAddToCard.addEventListener('click', addToCart)
+// btnNext.addEventListener('click', handleBtnClickNext);
+// btnPrevious.addEventListener('click', handleBtnClickPrevious);
+
+btnAddToCard.forEach( btn =>  btn.addEventListener('click', addToCart))
 
 
-heroImg.addEventListener('click', onHeroImgClick);
+// heroImg.addEventListener('click', onHeroImgClick);
 
 // FUNCION PARA ABRIR EL CARRITO
 
@@ -119,38 +120,36 @@ function setHeroImage(imageIndex){
 
 // FUNCIÓN PARA AGREGAR PRODUCTO AL CARRITO
 
+ function addToCart(){
+    updateCart();
+}
 
-async function addToCart(){
-    
-    const productosStorage = JSON.parse( await localStorage.getItem('carrito'))
-    console.log(productosStorage, 'productos')
+function updateCart(){
+    let productHtml = ''
+    const productosStorage = JSON.parse(localStorage.getItem('carrito'))
+    productsInCart = productosStorage.length;
+    if(productsInCart === 0) productInShoppingCart.innerHTML = productHtml;
     productosStorage.forEach((productoCarrito, index) => {
-        const productHTMLElement = `
+        productHtml += `
         <div class="item" id="producto${productoCarrito.id}">
             <img class="product-img" src="${productoCarrito.imagen}" alt="product 1">
             <div class="details">
                 <div class="product-name">${productoCarrito.nombre}</div>
                 <div class="price-group">
-                <div class="price">$${(productoCarrito.precio).toFixed(2)}</div> x
-                <div class="count">${(productsInCart + productoCarrito.cantidad).toFixed(2)}</div>
-                <div class="total-amount">$${(productosStorage.precio*productsInCart).toFixed(2)}</div>
+                <div class="price">$${Number(productoCarrito.precio)}</div> x
+                <div class="count">${productoCarrito.cantidad}</div>
+                <div class="total-amount">$${Number(productoCarrito.precio)* productoCarrito.cantidad}</div>
             </div>
             </div>
-                <img id="btnDelete" src="./images/icon-delete.svg" alt="icon delete">
+                <img id="btnDelete${productoCarrito.id}" class="btnDelete" src="./images/icons/icon-delete.svg" alt="icon delete">
             </div>
     `;
-    productInShoppingCart.innerHTML = productHTMLElement;
-    updateCart();
-    })
-
-    const btnDelete = document.querySelector('#btnDelete');
-    btnDelete.addEventListener('click', onBtnDeleteClick);  
-}
-
-function updateCart(){
+    productInShoppingCart.innerHTML = productHtml;
+    });
     updateCartIcon();
     updateMsgEmpty();
     updateCheckoutButton();
+    document.querySelectorAll('.btnDelete').forEach(btn => btn.addEventListener('click', onBtnDeleteClick));
 }
 function updateCartIcon() { 
     cartCount.textContent = productsInCart;
@@ -188,18 +187,14 @@ function updateCheckoutButton(){
 }
 
 // FUNCIÓN PARA ICONO DE ELIMINAR PRODUCTO EN EL CARRITO
-function onBtnDeleteClick(){
+function onBtnDeleteClick(e){
+    const productId = e.target.id.slice(9);
+    console.log(productId)
+    const productosStorage = JSON.parse(localStorage.getItem('carrito'));
+    const productos = productosStorage.filter(producto => producto.id != productId);
+    localStorage.setItem('carrito', JSON.stringify(productos));
     productsInCart--;
     updateCart();
-
-    const el = document.querySelector('.count');
-    const totalAmount = document.querySelector('.total-amount');
-    el.innerHTML = productsInCart;
-    totalAmount.innerHTML = `$${(price*discount*productsInCart).toFixed(2)}`;
-
-    if(productsInCart == 0){
-        productInShoppingCart.innerHTML = '';
-    }
 }
 // FUNCION PARA OVERLAY EN IMAGEN
 function onHeroImgClick(){

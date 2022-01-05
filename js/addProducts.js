@@ -3,8 +3,7 @@ let sectionsProductsF = document.getElementById('sectionProductsF');
 
 
 
-let productos = [];
-
+let productos = JSON.parse(localStorage.getItem('carrito')) || [];
 class Producto{
     constructor(id,imagen,nombre,marca,precio){
         this.id = id;
@@ -18,10 +17,12 @@ class Producto{
 
 /* SECTION HOMBRE */
 
+if(sectionsProductsH){
 fetch('./js/databaseProducts.json')
     .then(response => response.json())
-    .then(product => {
-        product.filter((sectionsProductsH, index) => index <= 15).forEach(product => {
+    .then(products => {
+        const filteredProducts = products.filter((prod, index) => index <= 16);
+        filteredProducts.forEach(product => {
             sectionsProductsH.innerHTML += `
                         <div class="card p-4 col-lg-3 col-md-4 col-sm-6 col-xs-12" category="${product.category}" id="producto${product.id}" style="width: auto;">
                             <img src="${product.imagen}" style="width: 30rem;" class="card-img-top " alt="Producto Imagen">
@@ -38,8 +39,9 @@ fetch('./js/databaseProducts.json')
             `
             
         });
-        product.forEach((product, index) => {
+        filteredProducts.forEach((product, index) => {
             document.getElementById(`btn${product.id}`).addEventListener('click', ()=>{
+                productos = JSON.parse(localStorage.getItem('carrito')) || [];
                 if(productos.find(producto => producto.nombre == product.nombre)){
                     let indice = productos.findIndex(producto => producto.nombre == product.nombre)
                     productos[indice].cantidad++;
@@ -49,17 +51,19 @@ fetch('./js/databaseProducts.json')
                     productos.push(producto)
                     localStorage.setItem('carrito', JSON.stringify(productos))
                 } 
-                
+                addToCart();
             })
         })
+        updateCart();
     })
-
+}
 /* SECTION MUJER */
-
+if(sectionsProductsF){
 fetch('./js/databaseProducts.json')
     .then(response => response.json())
-    .then(product => {
-        product.filter((sectionsProductsF, index) => index >= 16).forEach(product => {
+    .then(products => {
+        const filteredProducts = products.filter((prod, index) => index > 16);
+        filteredProducts.forEach(product => {
             sectionsProductsF.innerHTML += `
                         <div class="card p-4 col-lg-3 col-md-4 col-sm-6 col-xs-12" category="${product.category}"  id="producto${product.id}" style="width: auto;">
                             <img src="${product.imagen}" style="width: 30rem;" class="card-img-top" alt="Producto Imagen">   
@@ -75,10 +79,10 @@ fetch('./js/databaseProducts.json')
                         </div>
             `
         });
-
-        product.forEach((product, index) => {
+        
+        filteredProducts.forEach((product, index) => {
             document.getElementById(`btn${product.id}`).addEventListener('click', ()=>{
-                
+                productos = JSON.parse(localStorage.getItem('carrito')) || [];
                 if(productos.find(producto => producto.nombre == product.nombre)){
                     let indice = productos.findIndex(producto => producto.nombre == product.nombre)
                     productos[indice].cantidad++;
@@ -88,10 +92,10 @@ fetch('./js/databaseProducts.json')
                     productos.push(producto)
                     localStorage.setItem('carrito', JSON.stringify(productos))
                 }
-                
+                addToCart();
             })
         })
-        
+        updateCart();
     })
-
+}
 

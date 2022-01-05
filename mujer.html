@@ -49,18 +49,19 @@
       <div class="cart-avatar-group">
         <img id="dark-mode-btn" src="images/icons/dark-mode.svg" alt="dark mode">
         <img id="light-mode-btn" src="images/icons/light-mode.png" alt="light mode">
-        <div class="btnCart">
+        <div class="btnCart" id="btnCart">
           <img id="iconCart1" src="./images/icons/icon-cart.svg" alt="cart icon">
           <img id="iconCart2" src="./images/icons/icon-cart2.svg" alt="cart icon">
+          <div class="cart-count hidden" id="cart-count">1</div>
         </div>
       </div>
 
-      <div class="cart hidden">
+      <div id="cart" class="cart hidden">
         <div class="cart-header">Carrito de Compras</div>
-        <div class="products-in-cart">
+        <div class="products-in-cart" id="products-in-cart">
         </div>
-        <div class="msg-empty">Tu carrito está vacío</div>
-        <div class="checkout hidden">Verificar</div>
+        <div class="msg-empty" id="msg-empty">Tu carrito está vacío</div>
+        <div class="checkout hidden" id="checkout">Verificar</div>
       </div>
     </header>
 
@@ -68,13 +69,13 @@
     <div class="sectInf">
       <div class="dropdown">
         <h1 class="title">Zapatillas <span> · </span>Mujer</h1>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btnFilter btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Filtrar
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" category="all" id="filterAll">Todos</a></li>
-          <li><a class="dropdown-item" category="Deportiva" id="filterDeportiva">Deportiva</a></li>
-          <li><a class="dropdown-item" category="Urbana" id="filterUrbana">Urbana</a></li>
+          <li><a class="dropdown-item filter" category="all" id="filterAll">Todos</a></li>
+          <li><a class="dropdown-item filter" category="Deportiva" id="filterDeportiva">Deportiva</a></li>
+          <li><a class="dropdown-item filter" category="Urbana" id="filterUrbana">Urbana</a></li>
         </ul>
       </div>
     </div>
