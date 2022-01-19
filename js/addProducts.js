@@ -21,7 +21,7 @@ if(sectionsProductsH){
 fetch('./js/databaseProducts.json')
     .then(response => response.json())
     .then(products => {
-        const filteredProducts = products.filter((prod, index) => index <= 16);
+        const filteredProducts = products.filter((prod, index) => index <= 15);
         filteredProducts.forEach(product => {
             sectionsProductsH.innerHTML += `
                         <div class="card p-4 col-lg-3 col-md-4 col-sm-6 col-xs-12" category="${product.category}" id="producto${product.id}" style="width: auto;">
@@ -62,7 +62,7 @@ if(sectionsProductsF){
 fetch('./js/databaseProducts.json')
     .then(response => response.json())
     .then(products => {
-        const filteredProducts = products.filter((prod, index) => index > 16);
+        const filteredProducts = products.filter((prod, index) => index > 15);
         filteredProducts.forEach(product => {
             sectionsProductsF.innerHTML += `
                         <div class="card p-4 col-lg-3 col-md-4 col-sm-6 col-xs-12" category="${product.category}"  id="producto${product.id}" style="width: auto;">

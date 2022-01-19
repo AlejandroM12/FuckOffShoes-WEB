@@ -22,50 +22,50 @@
   
 </head>
 <body>
-    <header>
-      <div class="hamburguer-logo-group">
-        <div class="hamburguer">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <a href="index.html"><img id="logo" src="images/icons/logo.svg" alt="logo icon"></a>
-        <a href="index.html"><img id="logoOrange" src="images/icons/logoOrange.svg" alt="logo icon"></a>
-        
-        <!--Menu-->
-        <nav class="menu hidden">
-          <div class="slide-menu">
-            <img id="btnMenuClose" src="./images/icons/icon-close.svg" alt="">
-            
-            <ul>
-              <li><a href="hombre.html">Hombre</a></li>
-              <li><a href="mujer.html">Mujer</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </div>
-
-        </nav>
+  <header>
+    <div class="hamburguer-logo-group">
+      <div class="hamburguer">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
 
-      <div class="cart-avatar-group">
-        <img id="dark-mode-btn" src="images/icons/dark-mode.svg" alt="dark mode">
-        <img id="light-mode-btn" src="images/icons/light-mode.png" alt="light mode">
-        <div class="btnCart">
-          <img id="iconCart1" src="./images/icons/icon-cart.svg" alt="cart icon">
-          <img id="iconCart2" src="./images/icons/icon-cart2.svg" alt="cart icon">
-          <div class="cart-count hidden"></div>
-        </div>
-      </div>
-     
+      <a href="index.html"><img id="logo" src="images/icons/logo.svg" alt="logo icon"></a>
+      <a href="index.html"><img id="logoOrange" src="images/icons/logoOrange.svg" alt="logo icon"></a>
+      
+      
+      <nav class="menu hidden">
+        <div class="slide-menu">
+          <img id="btnMenuClose" src="./images/icons/icon-close.svg" alt="">
 
-      <div class="cart hidden">
-        <div class="cart-header">Carrito de Compras</div>
-        <div class="products-in-cart">
+          <ul>
+            <li><a href="hombre.html">Hombre</a></li>
+            <li><a href="mujer.html">Mujer</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="msg-empty">Tu carrito está vacío</div>
-        <div class="checkout hidden">Verificar</div>
+
+      </nav>
+    </div>
+
+    <div class="cart-avatar-group">
+      <img id="dark-mode-btn" src="images/icons/dark-mode.svg" alt="dark mode">
+      <img id="light-mode-btn" src="images/icons/light-mode.png" alt="light mode">
+      <div class="btnCart" id="btnCart">
+        <img id="iconCart1" src="./images/icons/icon-cart.svg" alt="cart icon">
+        <img id="iconCart2" src="./images/icons/icon-cart2.svg" alt="cart icon">
+        <div class="cart-count hidden" id="cart-count">1</div>
       </div>
-    </header>
+    </div>
+
+    <div class="cart hidden" id="cart">
+      <div class="cart-header">Carrito de Compras</div>
+      <div class="products-in-cart" id="products-in-cart">
+      </div>
+      <div class="msg-empty" id="msg-empty">Tu carrito está vacío</div>
+      <div class="checkout hidden" id="checkout" >Verificar</div>
+    </div>
+  </header>
 
 
       <!--CAROUSEL-->
