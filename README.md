@@ -49,4 +49,4 @@ Ahora si ya estamos listos para ejecutar la aplicación en tu navegador.
 * Github: [alejandroM12](https://github.com/AlejandroM12)
 
 ## :page_facing_up: Licencia
-Este proyecto esta bajo la licencia [MIT](/LICENCE).
+Este proyecto esta bajo la licencia [MIT](./LICENCE).
