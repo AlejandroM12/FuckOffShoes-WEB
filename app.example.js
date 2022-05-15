@@ -1,3 +1,5 @@
+
+
 // BOTONES PARA CAMBIAR CANTIDAD
 const btnPlus = document.querySelector('#btnPlus'); 
 const btnMinus = document.querySelector('#btnMinus'); 
@@ -71,7 +73,7 @@ function getCurrentImageIndex(){
     return imageIndex;
 }
 function setHeroImage(imageIndex){
-    heroImg.src = `./images/image-product-${imageIndex}.jpg`;
+    heroImg.src = `images/image-product-${imageIndex}.jpg`;
 
     gallery.forEach(img => {
         img.classList.remove('active');

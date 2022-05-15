@@ -676,6 +676,7 @@ header .hidden {
 }
 .dark-mode {
   background-color: #151515;
+  transition: none;
 }
 .dark-mode p,
 a,
@@ -690,6 +691,7 @@ h4 {
   cursor: pointer;
   color: #f7f8fd;
 }
+
 .dark-mode header .hamburguer-logo-group .menu .slide-menu ul {
   background-color: #151515;
   color: #f7f8fd;
@@ -697,7 +699,6 @@ h4 {
 .dark-mode .hamburguer-logo-group .menu .slide-menu ul li a {
   color: #f7f8fd;
 }
-
 .dark-mode .card {
   background-color: #151515;
 }
@@ -840,7 +841,15 @@ h4 {
 .formularioB {
   max-width: 1000px;
   padding: 20px;
-  background: #111;
+  background: #F2F2F2;
+}
+.dark-mode .formularioB{
+  background: #151515;
+  border: 1px solid #F2F2F2;
+}
+.form-control:focus{
+  border-color: #151515;
+  box-shadow:0 0 0 0.25rem rgba(245, 228, 228, 0.75)
 }
 .form-label {
   font-size: 1.5rem;
@@ -855,7 +864,8 @@ h4 {
 }
 
 .contacto h2 {
-  color: #ffad71;
+  color: #ff7d1a;
+  font-weight: bold;
 }
 .form-check-label {
   font-size: 1.5rem;
